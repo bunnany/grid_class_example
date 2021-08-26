@@ -1,0 +1,48 @@
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "aside article article"
+    "aside article2 article2";
+}
+
+.header { 
+	grid-area: header;
+	height: 50px;
+	width: 100%;
+	background-color: darkred; 
+}
+
+.aside { 
+	grid-area: aside;
+	height: 100%;
+	width: 100%;
+	background-color: blue; 
+}
+
+.article { 
+	grid-area: article;
+	height: 100%;
+	width: 100%;
+	background-color: green; 
+}
+
+.article2 { 
+	grid-area: article2;
+	height: 100%;
+	width: 100%;
+	background-color: purple; 
+}
+
+.padding {
+	margin: 2px;
+}
